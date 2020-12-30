@@ -1,4 +1,4 @@
-﻿<Window x:Class="EzConfig.MainWindow"
+﻿<Window x:Class="EzConfig.View.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -9,7 +9,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         Title="MainWindow" Height="800" Width="1400" WindowStartupLocation="CenterScreen">
 
-    <Grid>
+    <Grid ShowGridLines="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition/>
@@ -19,21 +19,6 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top">
             
-            <materialDesign:DrawerHost.Style>
-                <Style
-                    TargetType="materialDesign:DrawerHost"
-                    BasedOn="{StaticResource {x:Type materialDesign:DrawerHost}}">
-                    <Style.Triggers>
-                        <DataTrigger
-                            Binding="{Binding IsChecked, ElementName=BackgroundToggle}"
-                            Value="True">
-                            <Setter
-                                Property="OverlayBackground"
-                                Value="{DynamicResource PrimaryHueMidBrush}" />
-                        </DataTrigger>
-                    </Style.Triggers>
-                </Style>
-            </materialDesign:DrawerHost.Style>
             <materialDesign:DrawerHost.LeftDrawerContent>
                 <StackPanel
                     Margin="16">
@@ -67,9 +52,16 @@
                 <materialDesign:PackIcon Kind="BorderAll" />
             </Button>
         </materialDesign:DrawerHost>
+        
         <StackPanel Grid.Column="1" Orientation="Vertical">
             <Button > <materialDesign:PackIcon Kind="BorderAll" /></Button>
             <Button>hello</Button>
+            <!-- <DataGrid -->
+            <!--     ItemsSource="{Binding Models}" -->
+            <!--     CanUserAddRows="False" -->
+            <!--     SelectionUnit="Cell" -->
+            <!--     SelectionMode="Extended" /> -->
+            <DataGrid ItemsSource="{Binding  Models}"></DataGrid>
         </StackPanel>
     </Grid>
 
