@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "7rBrthbvTpki3VTMAabstQ4hNxBw3p3WCa7F4hjoAO+26LjzDYWTVTXQNDJrlVJK2XcCOEtrKbdfVmXPRKFjVQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\chuyou\\RiderProjects\\EzConfig\\EzConfig\\EzConfig\\EzConfig.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chuyou\\.nuget\\packages\\materialdesigncolors\\1.2.7\\materialdesigncolors.1.2.7.nupkg.sha512",
+    "C:\\Users\\chuyou\\.nuget\\packages\\materialdesignthemes\\3.2.0\\materialdesignthemes.3.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
